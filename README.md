@@ -63,5 +63,5 @@ I've got the following running time on an i5-7300HQ CPU:
 
 If you have technical issues running the tests or think there's a problem with their correctness, please create a Github issue.
 
-Regarding tokenization, I used the `\W++` regex pattern and [Unicode mode](https://docs.oracle.com/javase/7/docs/api/java/util/regex/Pattern.html#UNICODE_CHARACTER_CLASS)
-to split the text into tokens, and don't consider an empty string as a token.
+Regarding tokenization, I used the `[^A-Za-z0-9]++` regex pattern to determine what is not a number/letter,
+and don't consider an empty string as a token. 
